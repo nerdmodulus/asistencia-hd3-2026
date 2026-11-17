@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Regular 3 — Herramientas Digitales 3</title>
+<meta name="description" content="Rúbrica, registro de asistencia y calculadora de notas de la Regular 3 de Herramientas Digitales 3.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="hero">
+  <div class="hero-inner">
+    <div class="hero-text">
+      <p class="course">Herramientas Digitales 3 · Periodismo</p>
+      <h1>Regular 3</h1>
+      <p class="lede">La rúbrica del trabajo final, el registro completo de asistencia y una calculadora para saber qué nota necesitas para aprobar.</p>
+    </div>
+    <div class="hero-mosaic" id="mosaico" aria-hidden="true"></div>
+  </div>
+</div>
+
+<div class="wrap">
+
+  <nav class="tabs" role="tablist">
+    <button role="tab" id="tab-martes" aria-controls="panel-martes" aria-selected="true">Sección martes</button>
+    <button role="tab" id="tab-viernes" aria-controls="panel-viernes" aria-selected="false">Sección viernes</button>
+    <button role="tab" id="tab-rubrica" aria-controls="panel-rubrica" aria-selected="false">Rúbrica</button>
+    <button role="tab" id="tab-docente" aria-controls="panel-docente" aria-selected="false">Docente</button>
+    <button class="theme" id="theme" type="button" aria-label="Cambiar entre modo claro y oscuro">Modo oscuro</button>
+  </nav>
+
+  <section class="panel" id="panel-martes" role="tabpanel" aria-labelledby="tab-martes"></section>
+  <section class="panel" id="panel-viernes" role="tabpanel" aria-labelledby="tab-viernes" hidden></section>
+
+  <section class="panel" id="panel-rubrica" role="tabpanel" aria-labelledby="tab-rubrica" hidden>
+    <div class="weights">
+      <div class="weight-box"><span class="n">60%</span><span class="t">Trabajo grupal: el sitio y la exposición, repartidos en siete criterios de igual peso</span></div>
+      <div class="weight-box"><span class="n">40%</span><span class="t">Participación individual, calculada desde tu asistencia a clases</span></div>
+      <div class="weight-box"><span class="n">4 a 6</span><span class="t">Integrantes por grupo, con tema libre</span></div>
+    </div>
+
+    <details class="crit" open>
+      <summary><span class="crit-n">1</span><span>Sitio publicado en GitHub</span></summary>
+      <div class="crit-body">
+        <p>El grupo publica un sitio funcional en GitHub, idealmente vía GitHub Pages, con evidencia de trabajo repartido entre los integrantes.</p>
+        <div class="levels">
+          <div class="level"><span class="n n-7">6,5 – 7,0</span><p>Sitio publicado y funcionando, navegación clara y ordenada, con aporte visible de todo el grupo.</p></div>
+          <div class="level"><span class="n n-5">5,5 – 6,4</span><p>Sitio publicado y funcional, con detalles menores de organización o prolijidad.</p></div>
+          <div class="level"><span class="n n-4">4,0 – 5,4</span><p>Sitio publicado pero con errores de funcionamiento, estructura confusa o evidencia parcial de trabajo grupal.</p></div>
+          <div class="level"><span class="n n-1">1,0 – 3,9</span><p>El sitio no está publicado, no funciona, o no hay evidencia de trabajo en equipo.</p></div>
+        </div>
+      </div>
+    </details>
+
+    <details class="crit">
+      <summary><span class="crit-n">2</span><span>Video de 30 segundos o más</span></summary>
+      <div class="crit-body">
+        <p>El sitio incluye un video de al menos 30 segundos, incorporado y reproducible dentro del sitio.</p>
+        <div class="levels">
+          <div class="level"><span class="n n-7">6,5 – 7,0</span><p>Video de 30 segundos o más, bien integrado, con buena edición y pertinente al tema elegido.</p></div>
+          <div class="level"><span class="n n-5">5,5 – 6,4</span><p>Cumple la duración mínima y se integra bien, con detalles menores de calidad o edición.</p></div>
+          <div class="level"><span class="n n-4">4,0 – 5,4</span><p>Cumple apenas el mínimo de 30 segundos o la integración al sitio presenta problemas.</p></div>
+          <div class="level"><span class="n n-1">1,0 – 3,9</span><p>No alcanza los 30 segundos, no se reproduce o no está incorporado al sitio.</p></div>
+        </div>
+      </div>
+    </details>
+
+    <details class="crit">
+      <summary><span class="crit-n">3</span><span>Animación con archivos SVG</span></summary>
+      <div class="crit-body">
+        <p>El sitio incorpora una animación construida con archivos SVG, usando la técnica vista en clases.</p>
+        <div class="levels">
+          <div class="level"><span class="n n-7">6,5 – 7,0</span><p>Animación fluida, bien integrada visualmente y coherente con el tema del sitio.</p></div>
+          <div class="level"><span class="n n-5">5,5 – 6,4</span><p>Animación funcional, con detalles menores de fluidez o integración.</p></div>
+          <div class="level"><span class="n n-4">4,0 – 5,4</span><p>Animación presente pero con errores visibles o mal integrada al diseño.</p></div>
+          <div class="level"><span class="n n-1">1,0 – 3,9</span><p>No hay animación SVG, no funciona, o no corresponde a la técnica vista en clases.</p></div>
+        </div>
+      </div>
+    </details>
+
+    <details class="crit">
+      <summary><span class="crit-n">4</span><span>Seis textos escritos o más</span></summary>
+      <div class="crit-body">
+        <p>El sitio contiene seis o más textos escritos por el grupo, de tema y extensión libre.</p>
+        <div class="levels">
+          <div class="level"><span class="n n-7">6,5 – 7,0</span><p>Seis textos o más, bien redactados, coherentes y con aporte real al sitio.</p></div>
+          <div class="level"><span class="n n-5">5,5 – 6,4</span><p>Seis textos o más, con redacción correcta y detalles menores.</p></div>
+          <div class="level"><span class="n n-4">4,0 – 5,4</span><p>Se cumple el mínimo, pero con problemas de redacción o textos muy breves.</p></div>
+          <div class="level"><span class="n n-1">1,0 – 3,9</span><p>Menos de seis textos, o textos sin contenido real.</p></div>
+        </div>
+      </div>
+    </details>
+
+    <details class="crit">
+      <summary><span class="crit-n">5</span><span>Una imagen por cada texto</span></summary>
+      <div class="crit-body">
+        <p>Cada texto del sitio está acompañado de al menos una imagen pertinente a la lectura.</p>
+        <div class="levels">
+          <div class="level"><span class="n n-7">6,5 – 7,0</span><p>Todos los textos tienen imagen pertinente, bien ubicada y de buena calidad.</p></div>
+          <div class="level"><span class="n n-5">5,5 – 6,4</span><p>Todos los textos tienen imagen, con detalles menores de pertinencia o calidad.</p></div>
+          <div class="level"><span class="n n-4">4,0 – 5,4</span><p>La mayoría tiene imagen, pero falta en alguno o la relación con el texto es débil.</p></div>
+          <div class="level"><span class="n n-1">1,0 – 3,9</span><p>Varios textos sin imagen, o imágenes que no tienen relación con el contenido.</p></div>
+        </div>
+      </div>
+    </details>
+
+    <details class="crit">
+      <summary><span class="crit-n">6</span><span>Comparador de imagen antes y después</span></summary>
+      <div class="crit-body">
+        <p>El sitio incluye un segmento donde, al mover una línea central, se comparan dos versiones de una imagen, como se vio en clases.</p>
+        <div class="levels">
+          <div class="level"><span class="n n-7">6,5 – 7,0</span><p>El comparador funciona bien, con buenas imágenes y pertinencia al tema.</p></div>
+          <div class="level"><span class="n n-5">5,5 – 6,4</span><p>Funciona, con detalles menores de ajuste, calidad de imagen o presentación.</p></div>
+          <div class="level"><span class="n n-4">4,0 – 5,4</span><p>Está presente pero con errores de funcionamiento o imágenes poco adecuadas.</p></div>
+          <div class="level"><span class="n n-1">1,0 – 3,9</span><p>No existe el segmento, o la línea central no se puede mover.</p></div>
+        </div>
+      </div>
+    </details>
+
+    <details class="crit">
+      <summary><span class="crit-n">7</span><span>Exposición en clases, máximo 4 minutos</span></summary>
+      <div class="crit-body">
+        <p>El grupo expone su trabajo en clases y presenta todo el sitio en un máximo de 4 minutos.</p>
+        <div class="levels">
+          <div class="level"><span class="n n-7">6,5 – 7,0</span><p>Exposición clara, dentro del tiempo, cubre todos los elementos y participan todos los integrantes.</p></div>
+          <div class="level"><span class="n n-5">5,5 – 6,4</span><p>Dentro del tiempo, con detalles menores de claridad o reparto entre integrantes.</p></div>
+          <div class="level"><span class="n n-4">4,0 – 5,4</span><p>Se excede levemente del tiempo o cubre el sitio de forma incompleta.</p></div>
+          <div class="level"><span class="n n-1">1,0</span><p>El grupo no expone. Este criterio queda automáticamente en 1,0.</p></div>
+        </div>
+      </div>
+    </details>
+
+    <div class="dates">
+      <h3>Fechas de exposición</h3>
+      <ul>
+        <li>Sección martes: 1 de diciembre</li>
+        <li>Sección viernes: 4 de diciembre</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="panel" id="panel-docente" role="tabpanel" aria-labelledby="tab-docente" hidden>
+    <div class="block">
+      <h2>Clases que se cuentan</h2>
+      <p class="hint">Haz clic en una clase para sacarla del cálculo. Sale del total y de las presencias, así que todas las notas se recalculan sobre las clases que quedan.</p>
+
+      <p class="sub" id="subMartes"></p>
+      <div class="chips" id="chipsMartes"></div>
+
+      <p class="sub" id="subViernes" style="margin-top:1.4rem"></p>
+      <div class="chips" id="chipsViernes"></div>
+
+      <p class="sub" style="margin-top:1.4rem">Mientras pruebas, los cambios se guardan solo en tu navegador. Para que los estudiantes vean lo mismo, reemplaza la línea <code>var EXCLUIDAS</code> de <code>app.js</code> y sube el cambio a GitHub:</p>
+      <pre class="code" id="snippet"></pre>
+      <div class="actions">
+        <button class="btn btn-ghost" id="copiarSnippet" type="button">Copiar línea</button>
+        <button class="btn btn-quiet" id="resetClases" type="button">Volver a contar todas</button>
+      </div>
+    </div>
+
+    <div class="block">
+      <h2>Calculadora por grupo</h2>
+      <p class="hint">Ingresa la nota de cada criterio del trabajo y agrega a los integrantes. La participación de cada uno se toma de su asistencia. Todo queda guardado solo en este navegador.</p>
+      <div class="actions" style="margin-top:0">
+        <button class="btn btn-primary" id="addGrupo" type="button">Agregar grupo</button>
+        <button class="btn btn-ghost" id="exportCsv" type="button">Descargar CSV</button>
+      </div>
+    </div>
+    <div id="grupos"></div>
+  </section>
+
+  <footer>Herramientas Digitales 3 · Universidad Autónoma de Chile</footer>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
